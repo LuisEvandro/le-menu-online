@@ -2,15 +2,38 @@ export default {
   title: "default",
 
   colors: {
-    primary: "#7A89FE",
+    primary: {
+      default: "#CE3246",
+      ligth: "#F15B6F",
+      dark: "#CC1028",
+    },
 
-    background: "#1D1E22",
-    backgroundComponents: "#2D3238",
+    secondary: {
+      default: "#32CF52",
+      ligth: "#7BD78D",
+      dark: "#13C236",
+    },
 
-    titles: "#E0E0E0",
-    labels: "#8C8FA7",
-    text: "#F2F2F2",
+    white: {
+      default: "#FFF8F8",
+      ligth: "#FFFDFD",
+      dark: "#FBEBED",
+    },
 
-    white: "#FFF",
+    black: {
+      default: "#211415",
+      ligth: "#251E1F",
+      dark: "#140406",
+    },
+
+    gray: {
+      gray5: "#F3F3F3",
+      gray10: "#E5E5E5",
+      gray20: "#D9D6D6",
+      gray30: "#CECECE",
+      gray40: "#B1AFAF",
+      gray50: "#9D9797",
+      gray100: "#766E6E",
+    },
   },
 };

@@ -5,16 +5,39 @@ declare module "styled-components" {
     title: string;
 
     colors: {
-      primary: string;
+      primary: {
+        default: string;
+        ligth: string;
+        dark: string;
+      };
 
-      background: string;
-      backgroundComponents: string;
+      secondary: {
+        default: string;
+        ligth: string;
+        dark: string;
+      };
 
-      titles: string;
-      labels: string;
-      text: string;
+      white: {
+        default: string;
+        ligth: string;
+        dark: string;
+      };
 
-      white: string;
+      black: {
+        default: string;
+        ligth: string;
+        dark: string;
+      };
+
+      gray: {
+        gray5: string;
+        gray10: string;
+        gray20: string;
+        gray30: string;
+        gray40: string;
+        gray50: string;
+        gray100: string;
+      };
     };
   }
 }

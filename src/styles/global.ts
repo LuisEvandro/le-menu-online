@@ -8,10 +8,15 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.colors.background};
+    background: ${(props) => props.theme.colors.gray.gray20};
     font-size: 16px;
-    color: ${(props) => props.theme.colors.text};
-    font-family: 'Fira Code', monospace;
+    color: ${(props) => props.theme.colors.white.ligth};
+    font-family: 'Roboto', monospace;
+
+    .font-title{
+      font-family: 'Lato', monospace !important;
+    }
+
   }
 
   .material-icons {

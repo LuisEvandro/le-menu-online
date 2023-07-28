@@ -3,7 +3,7 @@ import { HomeContainer } from "./styles";
 export default function Home() {
   return (
     <HomeContainer>
-      <h1>TEST</h1>
+      <h1 className="font-title">TEST</h1>
       <div>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
