@@ -1,6 +1,15 @@
+import { toast } from "react-toastify";
 import { HomeContainer } from "./styles";
 
 export default function Home() {
+  const config_toaster = {
+    autoClose: 4000,
+    position: toast.POSITION.TOP_RIGHT,
+    hideProgressBar: false,
+    closeOnClick: true,
+    draggable: true,
+  };
+
   return (
     <HomeContainer>
       <h1 className="font-title">TEST</h1>
@@ -16,6 +25,18 @@ export default function Home() {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
+
+        <button
+          id="teste"
+          onClick={() =>
+            toast.error(
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+              config_toaster
+            )
+          }
+        >
+          ERROR ALERT
+        </button>
       </div>
     </HomeContainer>
   );
