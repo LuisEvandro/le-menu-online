@@ -20,6 +20,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/purchase" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

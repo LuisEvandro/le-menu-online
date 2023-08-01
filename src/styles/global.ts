@@ -7,6 +7,18 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  p{
+    margin: 0;
+  }
+
+  a{
+    text-decoration: none;
+    color: ${(props) => props.theme.colors.white.ligth};
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
   body {
     background: ${(props) => props.theme.colors.gray.gray20};
     font-size: 16px;
@@ -16,6 +28,8 @@ export default createGlobalStyle`
     .font-title{
       font-family: 'Lato', monospace !important;
     }
+
+    height: 1500px;
 
   }
 
