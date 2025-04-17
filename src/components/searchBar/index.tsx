@@ -2,8 +2,11 @@ import { Container, FormControl, IconButton } from "@mui/material";
 import { ChangeEvent, KeyboardEvent, useState } from "react";
 import { TextFieldStyled } from "../textField/styles";
 import { SearchBarStyle } from "./styles";
+import { SearchBarProps } from "./types";
 
-export default function SearchBar() {
+export default function SearchBar({
+  iconPosition = "start",
+}: SearchBarProps) {
   const [searchText, setSearchText] = useState<string>("");
 
   function handleClickSearch() {
@@ -30,8 +33,14 @@ export default function SearchBar() {
                 handleClickSearch();
               }
             }}
-            InputProps={{
+            InputProps={iconPosition === "start" ? {
               startAdornment: (
+                <IconButton aria-label="Buscar" onClick={handleClickSearch}>
+                  <span className="material-icons">search</span>
+                </IconButton>
+              ),
+            } : {
+              endAdornment: (
                 <IconButton aria-label="Buscar" onClick={handleClickSearch}>
                   <span className="material-icons">search</span>
                 </IconButton>

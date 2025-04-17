@@ -6,8 +6,6 @@ export const SearchBarStyle = styled("div")`
     align-items: center;
     justify-content: center;
 
-    margin-top: 45px;
-
     .form-control {
       width: 100%;
       max-width: 750px;
